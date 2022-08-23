@@ -38,6 +38,7 @@ option(NO_CACHE "Use an always empty cache ZRTP - for testing mainly." OFF)
 option(SQLCIPHER "Use SQLCipher DB as backend for ZRTP cache." OFF)
 option(SDES "Include SDES when not building for CCRTP." ON)
 option(AXO "Include Axolotl support when not building for CCRTP." OFF)
+option(BUILD_STATIC "Build static core library." ON)
 
 option(ANDROID "Generate Android makefiles (Android.mk)" OFF)
 option(JAVA "Generate Java support files (requires JDK and SWIG)" OFF)
