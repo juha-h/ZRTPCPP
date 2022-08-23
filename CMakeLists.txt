@@ -43,6 +43,8 @@ option(BUILD_STATIC "Build static core library." ON)
 option(ANDROID "Generate Android makefiles (Android.mk)" OFF)
 option(JAVA "Generate Java support files (requires JDK and SWIG)" OFF)
 
+add_compile_options(-fPIC)
+
 #
 # If your project needs SAS relay support (refer to RFC6189 chapter 7.3) then
 # uncomment the following add_definitiones statement. Make sure you understand
