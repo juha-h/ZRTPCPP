@@ -30,13 +30,13 @@ set (SOVERSION 4)
 # Without any options cmake generates libzrtpcpp for use with GNU ccRTP
 #
 option(CCRTP "Build library to use with GNU ccRTP." OFF)
-option(CORE_LIB "Build core library only, no spcific client support." OFF)
+option(CORE_LIB "Build core library only, no spcific client support." ON)
 option(CRYPTO_STANDALONE "Use embedded crypto and big number modules." ON)
 option(TIVI "Build library for the tivi client, implies '-DCRYPTO_STNDALONE=true'." OFF)
 option(SQLITE "Use SQLite DB as backend for ZRTP cache." OFF)
 option(NO_CACHE "Use an always empty cache ZRTP - for testing mainly." OFF)
 option(SQLCIPHER "Use SQLCipher DB as backend for ZRTP cache." OFF)
-option(SDES "Include SDES when not building for CCRTP." OFF)
+option(SDES "Include SDES when not building for CCRTP." ON)
 option(AXO "Include Axolotl support when not building for CCRTP." OFF)
 
 option(ANDROID "Generate Android makefiles (Android.mk)" OFF)
