@@ -15,7 +15,6 @@
  */
 
 #pragma clang diagnostic push
-#pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
 #ifndef SKEINAPI_H
 #define SKEINAPI_H
 
