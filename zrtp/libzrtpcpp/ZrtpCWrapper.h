@@ -980,7 +980,11 @@ extern "C"
      */
     const char* zrtp_getSasType(ZrtpContext* zrtpContext);
 #ifdef  __GNUC__ 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wpedantic"
+#pragma clang diagnostic ignored "-W#warnings"
 #warning zrtp_getSasType(...) API changed - caller shall free() returned data
+#pragma clang diagnostic pop#warning zrtp_getSasType(...) API changed - caller shall free() returned data
 #endif
 
     /**
