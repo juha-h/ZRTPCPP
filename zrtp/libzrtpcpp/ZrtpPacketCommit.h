@@ -134,7 +134,7 @@ class __EXPORT ZrtpPacketCommit : public ZrtpPacketBase {
     void setHMAC(uint8_t* hash)        { memcpy(commitHeader->hmac, hash, sizeof(commitHeader->hmac)); };
 
     /// Set MAC field during multi-stream mode, a fixed length byte array
-    void setHMACMulti(uint8_t* hash)   { memcpy(commitHeader->hmac-4*ZRTP_WORD_SIZE, hash, sizeof(commitHeader->hmac)); };
+    void setHMACMulti(uint8_t* hash)   { uint8_t *p = commitHeader->hmac-4*ZRTP_WORD_SIZE; memcpy(p, hash, sizeof(commitHeader->hmac)); };
 
  private:
      CommitPacket_t data;
