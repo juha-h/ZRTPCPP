@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.4.1)
 
 PROJECT(libzrtpcpp)
 
@@ -40,7 +40,7 @@ option(SDES "Include SDES when not building for CCRTP." ON)
 option(AXO "Include Axolotl support when not building for CCRTP." OFF)
 option(BUILD_STATIC "Build static core library." ON)
 
-option(ANDROID "Generate Android makefiles (Android.mk)" OFF)
+# option(ANDROID "Generate Android makefiles (Android.mk)" OFF)
 option(JAVA "Generate Java support files (requires JDK and SWIG)" OFF)
 
 add_compile_options(-fPIC)
